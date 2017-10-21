@@ -22,20 +22,12 @@ public class Project4 {
         for (int i = 999; i > 99; i--) {
             for (int j = 999; j > 99; j--) {
                 mult = i * j;
-                if (isPalindrome(mult) && mult > val) {
+                if (Utility.isPalindrome(mult) && mult > val) {
                     val = mult;
                 }
             }
         }
 
         System.out.println(val);
-    }
-
-    public static boolean isPalindrome(int n) {
-        String first = Integer.toString(n);
-        String second = new StringBuilder(first).reverse().toString();
-
-        return first.equals(second);
-
     }
 }

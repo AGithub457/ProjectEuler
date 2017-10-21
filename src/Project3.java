@@ -21,21 +21,11 @@ public class Project3 {
 
         for (long i = 2; i < n; i++) {
 
-            if ((n % i == 0) && isPrime(i) && (i > prime)) {
+            if ((n % i == 0) && Utility.isPrime(i) && (i > prime)) {
                 prime = i;
             }
 
             System.out.println(prime);
         }
-    }
-
-    public static boolean isPrime(long n) {
-        int i;
-        for (i = 2; i <= n / 2; i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
     }
 }
