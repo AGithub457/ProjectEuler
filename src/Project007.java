@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-public class Project7 {
+public class Project007 {
     public static void main(String[] args) {
         int count = 0;
         int iterator = 2;

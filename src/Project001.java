@@ -14,20 +14,16 @@
  * limitations under the License.
  */
 
-public class Project4 {
+public class Project001 {
     public static void main(String[] args) {
-        int mult;
-        int val = 0;
+        int tally = 0;
 
-        for (int i = 999; i > 99; i--) {
-            for (int j = 999; j > 99; j--) {
-                mult = i * j;
-                if (Utility.isPalindrome(mult) && mult > val) {
-                    val = mult;
-                }
+        for (int i = 0; i < 1000; i++) {
+            if (i % 5 == 0 || i % 3 == 0) {
+                tally += i;
             }
         }
-
-        System.out.println(val);
+        System.out.println(tally);
     }
 }
+

@@ -14,21 +14,18 @@
  * limitations under the License.
  */
 
-public class Project9 {
+public class Project003 {
     public static void main(String[] args) {
-        int max = 1000;
+        long n = 600851475143L;
+        long prime = 0;
 
-        for (int a = 1; a < max; a++) {
-            for (int b = a + 1; b < max; b++) {
-                int c = max - a - b;
+        for (long i = 2; i < n; i++) {
 
-                if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
-                    System.out.println("a: " + a);
-                    System.out.println("b: " + b);
-                    System.out.println("c: " + c);
-                    System.out.println(a * b * c);
-                }
+            if ((n % i == 0) && Utility.isPrime(i) && (i > prime)) {
+                prime = i;
             }
+
+            System.out.println(prime);
         }
     }
 }

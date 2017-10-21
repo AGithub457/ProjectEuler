@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-public class Project2 {
+public class Project002 {
     public static void main(String[] args) {
         int i = 1, i2 = 1, tally = 0;
 
