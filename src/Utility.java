@@ -16,22 +16,30 @@
 
 public class Utility {
     public static boolean isPrime(long n) {
-        int i;
-        for (i = 2; i <= n / 2; i++) {
+        if (n < 2) {
+            return false;
+        }
+
+        for (int i = 2; i <= n / 2; i++) {
             if (n % i == 0) {
                 return false;
             }
         }
+
         return true;
     }
 
     public static boolean isPrime(int n) {
-        int i;
-        for (i = 2; i <= n / 2; i++) {
+        if (n < 2) {
+            return false;
+        }
+
+        for (int i = 2; i <= n / 2; i++) {
             if (n % i == 0) {
                 return false;
             }
         }
+
         return true;
     }
 
