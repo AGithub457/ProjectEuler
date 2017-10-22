@@ -14,23 +14,16 @@
  * limitations under the License.
  */
 
-public class Project007 {
+public class Problem001 {
     public static void main(String[] args) {
-        int count = 0;
-        int iterator = 2;
-        boolean is1001 = false;
+        int tally = 0;
 
-        while (!is1001) {
-            if (Utility.isPrime(iterator)) {
-                count++;
+        for (int i = 0; i < 1000; i++) {
+            if (i % 5 == 0 || i % 3 == 0) {
+                tally += i;
             }
-
-            if (count == 10001) {
-                System.out.println(iterator);
-                is1001 = true;
-            }
-
-            iterator++;
         }
+        System.out.println(tally);
     }
 }
+

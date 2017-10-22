@@ -14,17 +14,25 @@
  * limitations under the License.
  */
 
-public class Project010 {
+public class Problem005 {
     public static void main(String[] args) {
-        int max = 2000000;
-        long sum = 0;
+        boolean isDiv = true;
+        int count = 1;
 
-        for (int i = 1; i < max; i++) {
-            if (Utility.isPrime(i)) {
-                sum += i;
+        while (isDiv) {
+            for (int i = 1; i <= 20; i++) {
+                if (count % i == 0) {
+                    if (i == 20) {
+                        System.out.println(count);
+
+                        isDiv = false;
+                    }
+                } else {
+                    break;
+                }
             }
-        }
 
-        System.out.println(sum);
+            count++;
+        }
     }
 }

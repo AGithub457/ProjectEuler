@@ -14,18 +14,17 @@
  * limitations under the License.
  */
 
-public class Project006 {
+public class Problem002 {
     public static void main(String[] args) {
-        int sumSquare = 0;
-        int squareSum = 0;
+        int i = 1, i2 = 1, tally = 0;
 
-        for (int i = 1; i <= 100; i++) {
-            sumSquare += Math.pow(i, 2);
-
-            squareSum += i;
+        while (i <= 4000000) {
+            if (i % 2 == 0)
+                tally += i;
+            int z = i + i2;
+            i = i2;
+            i2 = z;
         }
-
-        squareSum = (int) Math.pow(squareSum, 2);
-        System.out.println(squareSum - sumSquare);
+        System.out.println(tally);
     }
 }

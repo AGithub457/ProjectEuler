@@ -14,20 +14,21 @@
  * limitations under the License.
  */
 
-public class Project004 {
+public class Problem009 {
     public static void main(String[] args) {
-        int mult;
-        int val = 0;
+        int max = 1000;
 
-        for (int i = 999; i > 99; i--) {
-            for (int j = 999; j > 99; j--) {
-                mult = i * j;
-                if (Utility.isPalindrome(mult) && mult > val) {
-                    val = mult;
+        for (int a = 1; a < max; a++) {
+            for (int b = a + 1; b < max; b++) {
+                int c = max - a - b;
+
+                if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
+                    System.out.println("a: " + a);
+                    System.out.println("b: " + b);
+                    System.out.println("c: " + c);
+                    System.out.println(a * b * c);
                 }
             }
         }
-
-        System.out.println(val);
     }
 }

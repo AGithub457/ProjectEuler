@@ -14,25 +14,18 @@
  * limitations under the License.
  */
 
-public class Project005 {
+public class Problem006 {
     public static void main(String[] args) {
-        boolean isDiv = true;
-        int count = 1;
+        int sumSquare = 0;
+        int squareSum = 0;
 
-        while (isDiv) {
-            for (int i = 1; i <= 20; i++) {
-                if (count % i == 0) {
-                    if (i == 20) {
-                        System.out.println(count);
+        for (int i = 1; i <= 100; i++) {
+            sumSquare += Math.pow(i, 2);
 
-                        isDiv = false;
-                    }
-                } else {
-                    break;
-                }
-            }
-
-            count++;
+            squareSum += i;
         }
+
+        squareSum = (int) Math.pow(squareSum, 2);
+        System.out.println(squareSum - sumSquare);
     }
 }

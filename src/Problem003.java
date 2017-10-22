@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-public class Project003 {
+public class Problem003 {
     public static void main(String[] args) {
         long n = 600851475143L;
         long prime = 0;

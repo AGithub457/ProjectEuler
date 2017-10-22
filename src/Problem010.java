@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-public class Project001 {
+public class Problem010 {
     public static void main(String[] args) {
-        int tally = 0;
+        int max = 2000000;
+        long sum = 0;
 
-        for (int i = 0; i < 1000; i++) {
-            if (i % 5 == 0 || i % 3 == 0) {
-                tally += i;
+        for (int i = 1; i < max; i++) {
+            if (Utility.isPrime(i)) {
+                sum += i;
             }
         }
-        System.out.println(tally);
+
+        System.out.println(sum);
     }
 }
-
