@@ -30,3 +30,6 @@
  * limitations under the License.
  */
 
+fun main(args: Array<String>) {
+
+}
