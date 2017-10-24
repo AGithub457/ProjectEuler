@@ -19,7 +19,9 @@ fun main(args: Array<String>) {
     var prime = 0L
 
     for (i in 2..(n - 1)) {
-        if ((n % i == 0L) && Utility2.isPrime(i) && (i > prime)) prime = i
+        if ((n % i == 0L) && Utility2.isPrime(i) && (i > prime)) {
+            prime = i
+        }
     }
 
     println(prime)
