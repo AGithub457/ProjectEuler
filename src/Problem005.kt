@@ -15,5 +15,22 @@
  */
 
 fun main(args: Array<String>) {
+    var isDiv = true
+    var count = 1
 
+    while (isDiv) {
+        for (i in 1..20) {
+            if (count % i == 0) {
+                if (i == 20) {
+                    println(count)
+
+                    isDiv = false
+                }
+            } else {
+                break
+            }
+        }
+
+        count++
+    }
 }
