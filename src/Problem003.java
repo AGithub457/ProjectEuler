@@ -20,7 +20,6 @@ public class Problem003 {
         long prime = 0;
 
         for (long i = 2; i < n; i++) {
-
             if ((n % i == 0) && Utility.isPrime(i) && (i > prime)) {
                 prime = i;
             }
