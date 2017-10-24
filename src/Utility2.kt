@@ -14,28 +14,30 @@
  * limitations under the License.
  */
 
-fun isPrime(n: Long): Boolean {
-    if (n < 2) return false
+object Utility2 {
+    fun isPrime(n: Long): Boolean {
+        if (n < 2) return false
 
-    for (i in 2..n / 2) if (n % i == 0L) return false
+        for (i in 2..n / 2) if (n % i == 0L) return false
 
-    return true
-}
+        return true
+    }
 
-fun isPrime(n: Int): Boolean {
-    if (n < 2) return false
+    fun isPrime(n: Int): Boolean {
+        if (n < 2) return false
 
-    for (i in 2..(n / 2)) if (n % i == 0) return false
+        for (i in 2..(n / 2)) if (n % i == 0) return false
 
-    return true
-}
+        return true
+    }
 
-fun isPalindrome(n: Int): Boolean {
+    fun isPalindrome(n: Int): Boolean {
 
-    return n.toString() == n.toString().reversed()
-}
+        return n.toString() == n.toString().reversed()
+    }
 
-fun isPalindrome(s: String): Boolean {
+    fun isPalindrome(s: String): Boolean {
 
-    return s == s.reversed()
+        return s == s.reversed()
+    }
 }
