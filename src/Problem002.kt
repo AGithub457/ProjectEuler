@@ -15,5 +15,17 @@
  */
 
 fun main(args: Array<String>) {
+    var i = 1
+    var i2 = 1
+    var tally = 0
 
+    while (i <= 4000000) {
+        if (i % 2 == 0) tally += i
+
+        var z = i + i2
+        i = i2
+        i2 = z
+    }
+
+    println(tally)
 }
