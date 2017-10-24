@@ -17,17 +17,17 @@
 public class Problem004 {
     public static void main(String[] args) {
         int mult;
-        int val = 0;
+        int value = 0;
 
         for (int i = 999; i > 99; i--) {
             for (int j = 999; j > 99; j--) {
                 mult = i * j;
-                if (Utility.isPalindrome(mult) && mult > val) {
-                    val = mult;
+                if (Utility.isPalindrome(mult) && mult > value) {
+                    value = mult;
                 }
             }
         }
 
-        System.out.println(val);
+        System.out.println(value);
     }
 }

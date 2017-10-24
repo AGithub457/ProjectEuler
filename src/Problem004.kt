@@ -15,5 +15,17 @@
  */
 
 fun main(args: Array<String>) {
+    var mult: Int
+    var value = 0
 
+    for (i in 999 downTo 100) {
+        for (j in 999 downTo 100) {
+            mult = i * j
+            if (Utility2.isPalindrome(mult) && mult > value) {
+                value = mult
+            }
+        }
+    }
+
+    println(value)
 }
