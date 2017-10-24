@@ -30,6 +30,28 @@
  * limitations under the License.
  */
 
-fun main(args: Array<String>) {
+fun isPrime(n: Long): Boolean {
+    if (n < 2) return false
 
+    for (i in 2..n / 2) if (n % i == 0L) return false
+
+    return true
+}
+
+fun isPrime(n: Int): Boolean {
+    if (n < 2) return false
+
+    for (i in 2..(n / 2)) if (n % i == 0) return false
+
+    return true
+}
+
+fun isPalindrome(n: Int): Boolean {
+
+    return n.toString() == n.toString().reversed()
+}
+
+fun isPalindrome(s: String): Boolean {
+
+    return s == s.reversed()
 }
