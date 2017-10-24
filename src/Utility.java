@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-public class Utility {
-    public static boolean isPrime(long n) {
+class Utility {
+    static boolean isPrime(long n) {
         if (n < 2) {
             return false;
         }
@@ -29,7 +29,7 @@ public class Utility {
         return true;
     }
 
-    public static boolean isPrime(int n) {
+    static boolean isPrime(int n) {
         if (n < 2) {
             return false;
         }
@@ -43,7 +43,7 @@ public class Utility {
         return true;
     }
 
-    public static boolean isPalindrome(int n) {
+    static boolean isPalindrome(int n) {
         String first = Integer.toString(n);
         String second = new StringBuilder(first).reverse().toString();
 
@@ -51,10 +51,10 @@ public class Utility {
 
     }
 
-    public static boolean isPalindrome(String s) {
-        String second = new StringBuilder(s).reverse().toString();
+    static boolean isPalindrome(String s) {
+        String s2 = new StringBuilder(s).reverse().toString();
 
-        return s.equals(second);
+        return s.equals(s2);
 
     }
 }
