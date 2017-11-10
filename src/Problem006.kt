@@ -15,5 +15,15 @@
  */
 
 fun main(args: Array<String>) {
+    var sumSquare = 0
+    var squareSum = 0
 
+    for (i in 1..100) {
+        sumSquare += Math.pow(i.toDouble(), 2.0).toInt()
+
+        squareSum += i
+    }
+
+    squareSum = Math.pow(squareSum.toDouble(), 2.0).toInt()
+    println(squareSum - sumSquare)
 }
