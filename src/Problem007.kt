@@ -15,5 +15,20 @@
  */
 
 fun main(args: Array<String>) {
+    var count = 0
+    var iterator: Int = 2
+    var is1001 = false
 
+    while (!is1001) {
+        if (Utility2.isPrime(iterator)) {
+            count++
+        }
+
+        if (count == 1001) {
+            println(iterator)
+            is1001 = true
+        }
+
+        iterator++
+    }
 }
