@@ -123,8 +123,8 @@ public class Problem013 {
 
         BigInteger sum = BigInteger.ZERO;
 
-        for (BigInteger i : numArray) {
-            sum = sum.add(i);
+        for (BigInteger num : numArray) {
+            sum = sum.add(num);
         }
 
         String sumS = sum.toString();
