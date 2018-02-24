@@ -14,14 +14,8 @@
  * limitations under the License.
  */
 
-fun main(args: Array<String>) {
-    var tally = 0
+public class Problem015 {
+    public static void main(String[] args) {
 
-    for (i in 0..999) {
-        if ((i % 5 == 0) || (i % 3 == 0)) {
-            tally++
-        }
     }
-
-    println(tally)
 }
